@@ -46,5 +46,3 @@ in the service (`Environment=DP_LOCK_EDID_NAME=...`).
 
 - Relies on amdgpu's debugfs `link_settings`, which is not a stable API. If
   flashing returns after a kernel or amdgpu update, check the journal first.
-- These files were rebuilt from the write-up after the originals were lost
-  in a system restore.
