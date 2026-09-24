@@ -7,7 +7,7 @@ The Apple Studio Display's intermittent grey flashing on an Omarchy (Arch + Hypr
 The Apple Studio Display flashed grey at random because amdgpu kept
 renegotiating the DisplayPort link rate. Lowering the resolution and
 blocking the display's USB hub (USBGuard) didn't help; pinning the link to
-4 lanes @ HBR3 (8.1 Gb/s per lane) stopped it immediately (diagnosed 2026-09-20).
+4 lanes @ HBR3 (8.1 Gb/s per lane) stopped it immediately.
 
 The setting lives in debugfs, which resets on every reboot and reconnect,
 so three pieces re-apply it:
